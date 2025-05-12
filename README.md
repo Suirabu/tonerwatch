@@ -34,21 +34,3 @@ Canon ColorJet,Computer Lab,192.168.1.46,TRUE
 ```sh
 bash monitor.sh
 ```
-
-### Automate with Cron
-
-To run the script automatically every weekday at 9:00 AM:
-
-1. Open your crontab
-
-```sh
-$ crontab -e
-```
-
-2. Paste this line (replace the path with the full path to `monitor.sh`):
-
-```txt
-0 9 * * 1-5 /usr/bin/env bash path/to/monitor.sh
-```
-
-⚠️ Ensure your computer is powered on at the scheduled time for the cron job to run.
